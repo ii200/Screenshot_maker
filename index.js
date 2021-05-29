@@ -1,8 +1,9 @@
 "use strict";
 
-var express = require('express');
-var app 	= express();
-var http 	= require('http').Server(app);
+var express         = require('express');
+var app 	        = express();
+var http 	        = require('http').Server(app);
+var puppeteer       = require('puppeteer');
 
 var io = require('socket.io')(http);
 
@@ -46,7 +47,6 @@ var out_data =
 ]	
 //
 
-const puppeteer = require('puppeteer');
 
 var vd_inc = 0;
 
